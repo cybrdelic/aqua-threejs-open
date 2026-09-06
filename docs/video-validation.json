@@ -1,0 +1,115 @@
+{
+  "movie": "CYBR-WATER-2.4-Waves-and-Whitewater.mp4",
+  "durationSeconds": 42.0,
+  "frames": 1008,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "frameRate": "24/1",
+  "fullDecodePassed": true,
+  "bytes": 106895911,
+  "movieSHA256": "d67cb54d5ce113aa938bf00fdf6bdfcdce6d19d40d8a391097975a8617c7f4a6",
+  "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+  "master": {
+    "file": "CYBR-WATER-2.4-High-Bitrate-Master.mp4",
+    "bytes": 360543354,
+    "sha256": "0b9fa1f1854354caebf5ce245380282468016be5bb664fd8ffcd4ff4c023cc3a",
+    "encoding": "Original per-take H.264 streams concatenated without re-encoding"
+  },
+  "viewingEncoding": {
+    "codec": "H.264",
+    "crf": 20,
+    "maximumRateKbps": 20000,
+    "resolutionUnchanged": true,
+    "frameCountUnchanged": true
+  },
+  "capture": "Actual Chromium / Three.js renderer, offline rendering, fixed 60Hz physics. No upscaling or frame interpolation.",
+  "shots": [
+    {
+      "name": "01-first-light",
+      "file": "01-first-light.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 192,
+      "duration": 8.0,
+      "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+      "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+      "renderSeconds": 242.37300562858582,
+      "maximumParticles": {
+        "spray": 5,
+        "bubbles": 1
+      },
+      "sha256": "25fa9bd1d04e81c1fc19ac99505f7126c4dcc2be643b547e466488d7fa64372e",
+      "browserErrors": []
+    },
+    {
+      "name": "02-crossing-seas",
+      "file": "02-crossing-seas.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 192,
+      "duration": 8.0,
+      "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+      "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+      "renderSeconds": 210.4347734451294,
+      "maximumParticles": {
+        "spray": 11,
+        "bubbles": 2
+      },
+      "sha256": "7edcf6fb67bc1cc74699c19a9689070ece66d0dc5003be8c320faa8dba049aac",
+      "browserErrors": []
+    },
+    {
+      "name": "03-whitewater",
+      "file": "03-whitewater.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 192,
+      "duration": 8.0,
+      "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+      "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+      "renderSeconds": 274.4128725528717,
+      "maximumParticles": {
+        "spray": 56,
+        "bubbles": 11
+      },
+      "sha256": "be2f77fbc870fb86246bf085e0c4f5d53037b0244155db5eb7a0627ca8b8c919",
+      "browserErrors": []
+    },
+    {
+      "name": "04-gale",
+      "file": "04-gale.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 192,
+      "duration": 8.0,
+      "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+      "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+      "renderSeconds": 217.19415497779846,
+      "maximumParticles": {
+        "spray": 32,
+        "bubbles": 11
+      },
+      "sha256": "697b29d390e9de551d70327e0b48af09f35de1c0438ef122b3b4e271047476b2",
+      "browserErrors": []
+    },
+    {
+      "name": "05-zoom",
+      "file": "05-zoom.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 240,
+      "duration": 10.0,
+      "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+      "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+      "renderSeconds": 325.5240457057953,
+      "maximumParticles": {
+        "spray": 56,
+        "bubbles": 11
+      },
+      "sha256": "8b2bfbab8a0b648c614ce25616dfebeea587ed2fbd2661256baf593a099354f5",
+      "browserErrors": []
+    }
+  ]
+}

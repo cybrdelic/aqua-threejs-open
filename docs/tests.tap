@@ -1,0 +1,38 @@
+TAP version 13
+ok 1 - blue energy normalized
+ok 2 - blue system fractions sum to one
+ok 3 - blue disjoint wave bands
+ok 4 - blue exact seeded reset
+ok 5 - blue finite reference heights and velocities
+ok 6 - dawn energy normalized
+ok 7 - dawn system fractions sum to one
+ok 8 - dawn disjoint wave bands
+ok 9 - dawn exact seeded reset
+ok 10 - dawn finite reference heights and velocities
+ok 11 - storm energy normalized
+ok 12 - storm system fractions sum to one
+ok 13 - storm disjoint wave bands
+ok 14 - storm exact seeded reset
+ok 15 - storm finite reference heights and velocities
+ok 16 - swell energy normalized
+ok 17 - swell system fractions sum to one
+ok 18 - swell disjoint wave bands
+ok 19 - swell exact seeded reset
+ok 20 - swell finite reference heights and velocities
+ok 21 - whitewater energy normalized
+ok 22 - whitewater system fractions sum to one
+ok 23 - whitewater disjoint wave bands
+ok 24 - whitewater exact seeded reset
+ok 25 - whitewater finite reference heights and velocities
+ok 26 - zero wave height has zero spectral energy
+ok 27 - camera has no old 180 metre clamp
+ok 28 - full-period foam uses wrapping, not an edge fade
+ok 29 - visible-crest normals use geometric correction, not a downward flip
+ok 30 - zero-height whitewater avoids equal smoothstep endpoints
+ok 31 - dawn sampled film-time surface has positive horizontal Jacobian
+ok 32 - blue sampled film-time surface has positive horizontal Jacobian
+ok 33 - storm sampled film-time surface has positive horizontal Jacobian
+ok 34 - swell sampled film-time surface has positive horizontal Jacobian
+ok 35 - whitewater sampled film-time surface has positive horizontal Jacobian
+1..35
+# 35 checks passed

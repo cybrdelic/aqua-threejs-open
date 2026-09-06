@@ -1,0 +1,142 @@
+{
+  "name": "whitewater",
+  "file": "docs/media/whitewater.gif",
+  "shot": {
+    "name": "03-whitewater",
+    "scene": "whitewater",
+    "title": "Whitewater, from above",
+    "caption": "Crest aeration \u2022 porous rafts \u2022 wind-stretched, aging foam",
+    "eye": [
+      25,
+      22,
+      35
+    ],
+    "end": [
+      8,
+      19,
+      32
+    ],
+    "target": [
+      4,
+      0,
+      0
+    ],
+    "targetEnd": [
+      -8,
+      0,
+      -8
+    ],
+    "fov": 48,
+    "seconds": 8
+  },
+  "excerptOffsetSeconds": 2.0,
+  "outputFPS": 10,
+  "offlineRender": true,
+  "renderer": "ANGLE (Mesa, llvmpipe (LLVM 20.1.2 256 bits), OpenGL 4.5)",
+  "renderSeconds": 112.31004370900001,
+  "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+  "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+  "capturedFrameSHA256": [
+    "fdbed979f390b3bd9fcfc76a6562f7afd97e2d7fdec6114d8613390817185391",
+    "d1891c703c2b8bb6e417ac0a7614e35cbc042b9f82eb162905abd29edd6d28bb",
+    "ff158e8b301844e67f9c00abf78c5fec7b14a870ce6ecf9e306cd5fe6e38ba20",
+    "949444d3645cbcd5c4cb01c25e018af6257c3ba3fa6a0032ddfd05402795e3c5",
+    "95bb674892ca4685a0c491900218ccb3e61202d111822212b9d4cf4ecb05aeea",
+    "6ec76742b241171708f6f11b7133bfd2f95e950291abb60137769aea2071e8d6",
+    "b8a1a4874728a9c58feb0fd85159fa0e21351b456a7261f9caddf4771f8cccf6",
+    "ef035039ecbd38479d999a8c65cf4fe9924ab9dcadd250aaa6934c292ba49e4c",
+    "29845268820d8ae81cc18681de1b53087dc59ea7f3d84628219a58a6478c572a",
+    "3a8022cc2645bd8392480c9882cb2c77bbe76df5900c1676b9421002a23fa027",
+    "ccc3bdf7712d28cfaa49a62cc18dbfedc460bf9108e7276120600533ec567479",
+    "d5e7bd014b259247321e71308b880c8d75f5dc0d6fc972b6a0ccc34e814366c9",
+    "6a4ef170c94d4de2d9ce96e72c66019fc8d3efec9b128de02b8bb31462e37564",
+    "c41366a0ee24c4e5055424f5aa7924c0c5547671aff3625965428fa70e42236c",
+    "e44eb003c2c8c0f5cf1650d7928212992b2610151fc6d946baf3385e279c2515",
+    "f84393dae77d2697d875bae8e8e82e6d50d692d78031453e2b87226a57fff84f",
+    "1ae25f1dedc9bd28377cc0e8ffa89482a0c5d069c0f2c82217a9372f2eea4bca",
+    "9c3f71a9768673ace7e14e141a7249326eb08ee165865172f78fc1354514b6ac",
+    "655a22b5f72dedb33a2d8fda92bbdeafde3092d3c56e5f2a45320a442e3385f5",
+    "6f4ec92f84c43515af21ee752714290f1aeb71d5ef7465caf145e51482aa73a9",
+    "8289a5ecdb6427db2ed3856b83564512b46cc865deb13df754d74de232a41e25",
+    "f01bebb6184ba8a519af98a7dbd62fbc015016c73a7fef5ce3f1f3c4af281bbb",
+    "706905e56b39b4cc89880aa5cc1067f0eb8044b6d6ac166ce3be75f538516a70",
+    "ead42d39adb1c2e85e2d73578b437a856a8855808034bd67978b218a011cd787",
+    "46e96035b3a34db9eaef05c77ffa9c442d1c40c9bd23c9acd9af804015e283b2",
+    "f612cde258f5f7942cac190523f3c4f5f6f917e4c8d5f2b8d44e209ff1b53e68",
+    "0d5bb11a5729407bbdc3424bdd3fbf66b43a789eba3c027d2d82853e5352ca06",
+    "5ae07bd3dfcac7ba89c6ee1a651924c70e8a7b7ef4c8a496af0c1167f329652c",
+    "f93888752294c938209ae36ad9d14e844655f83c68326b3c2647d73d1473a0ba",
+    "6192be64aa84d370371715cb704cb4287048421d4283e1ea84a47cb55aa57470",
+    "958b6316225dc7a336910db2fd4eac5f04d289844707a143587f667c98f3e41a",
+    "ae3179f21d7da9259eca1f28fc7ea98c2c9670723f22033e92a779ab9947308e",
+    "c3b39e78ade895e0f31488ed81c616adc1fd468655907bb1bde2158b533966a5",
+    "573c62db1bf84052c21b3b7c13b40ed532d37de14a2e486ddb4e6ce204e444ee",
+    "00f71e23c66e2e9b1836df15ee0cae1970f8ccd172aa330b037c3cd7f84b802a",
+    "f740798f3e483274461584982f4ea45b4576722b3f53843ae0546a1b2b6ba155",
+    "444d6b76957d8f431f8b358f4b6d389ab60e4cfe3e4754ce3c8652ff75f6603f",
+    "ba49e91f75849282ef13631ad6ed3bec3c7df3fcf405e97be80a0d24af75f50d",
+    "1f5859373ac3374271b603ca8ffadf90340194672b01dd9e1f2e1555ccc73031",
+    "919d7f44abc99be12e486568f396cc6383e0b35202f4fdcdadf5afbfbb48909d"
+  ],
+  "cameraSamples": [
+    {
+      "tick": 126,
+      "camera": {
+        "eye": [
+          20.51413612565445,
+          21.208376963350787,
+          34.20837696335079
+        ],
+        "target": [
+          0.833507853403141,
+          0,
+          -2.110994764397906
+        ],
+        "fov": 48
+      }
+    },
+    {
+      "tick": 246,
+      "camera": {
+        "eye": [
+          16.241884816753927,
+          20.454450261780107,
+          33.4544502617801
+        ],
+        "target": [
+          -2.18219895287958,
+          0,
+          -4.121465968586387
+        ],
+        "fov": 48
+      }
+    },
+    {
+      "tick": 360,
+      "camera": {
+        "eye": [
+          12.18324607329843,
+          19.73821989528796,
+          32.738219895287955
+        ],
+        "target": [
+          -5.047120418848168,
+          0,
+          -6.031413612565445
+        ],
+        "fov": 48
+      }
+    }
+  ],
+  "browserErrors": [],
+  "browserWarnings": [],
+  "gif": {
+    "width": 640,
+    "height": 360,
+    "frames": 40,
+    "durationSeconds": 4.0,
+    "bytes": 7978329,
+    "sha256": "820883e4eb079da84c4e3ffa2ade3579776f80beda8f2ddb3c82b74989049a3a",
+    "distinctDecodedFrames": 40
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "name": "dawn-swells",
+  "file": "docs/media/dawn-swells.gif",
+  "shot": {
+    "name": "01-first-light",
+    "scene": "dawn",
+    "title": "First light, crossing swell",
+    "caption": "Independent swell and wind-sea energy \u2022 resolved multiscale slopes",
+    "eye": [
+      14,
+      5.7,
+      24
+    ],
+    "end": [
+      -2,
+      6.2,
+      17
+    ],
+    "target": [
+      -46,
+      0,
+      -68
+    ],
+    "targetEnd": [
+      -56,
+      0,
+      -66
+    ],
+    "fov": 54,
+    "seconds": 8
+  },
+  "excerptOffsetSeconds": 2.0,
+  "outputFPS": 10,
+  "offlineRender": true,
+  "renderer": "ANGLE (Mesa, llvmpipe (LLVM 20.1.2 256 bits), OpenGL 4.5)",
+  "renderSeconds": 126.49012775600002,
+  "sourceBundleSHA256": "0322a6905664c87bbdf46fd3d38846b95679e54f2d7bc6d31dd724d7343137a1",
+  "sourceHTMLSHA256": "600bc4ca1321b20071bf97466217f2fe3ac4b2e9f7848d4d83f0b5612d180268",
+  "capturedFrameSHA256": [
+    "c4369e9f14d046aed6390d0a2972b40b430eab0596172182406904e0cbfe80c8",
+    "c949776f1be08d0f12501baf4f73b4ca8982ae2f36710cfb3b741339342f0f00",
+    "84445293f244146f9bf6423c79e3f53ed0d112639be928bd87d1077cf7fcce78",
+    "382e4cd175a6344e30fc89f56e6db60276b7b1cf63a6ce5813a2435c2d8e4298",
+    "16ed211e9d83b70394ca4e841ca03de9882ff32ed51d14673cc2168ae6bbb8bd",
+    "1eb33deb0fa88194530fdac36924d7317978e1a05aa8a129478a3bb15c84d17d",
+    "4cc240e5a1f0fbfde8ec49d662767a340c9d506c2b0e02606093a76074f9caaa",
+    "51db16e16c882c827ff0f22399a758b3edc688abd9ed70902bf0a362b59c5880",
+    "11173b384b8235b211319ece30325a3b4e629695423708f89e175ea75039d606",
+    "6eee1cc95f1115d3828e2b006567f1e015040f523a1e185b2c4e4cbca4c2858a",
+    "58c9f3c0f081c151b4e5797eaf6033f3fcc7a198d64176d961b9c3d1d1e6ad5b",
+    "f9dba7ec2c51632ad4189080b047153f4b556e7f8e582608f100b5266f204df6",
+    "8362da7e9dcb9ef059c0745e60616d96b996a1fee5c7b5b4f3ff4f3d8f43defe",
+    "ce49f9dbc7922b09d41c917834f7cbd23e9e4a55e354d8f8150fa5a110e157b8",
+    "15966af2645194f58e46028e22fa55ce8df2bcb910b36ea8d16b399298a0ab04",
+    "3c1ed1acbd25af3d1ab47bf268963f7ed91a296cd7e3488f15f50135760641a8",
+    "cede350df994a701b441e57bade48443f12453711952e23045e786b8dc5f0eaf",
+    "7da301ba4fa440612752c21e11e13d4682a0d48f13a8f81dd302497a98e1e27e",
+    "64ed388f506267b4f7d26572ec5997b8578b87647a6406c4da7a9b5bfbc5b257",
+    "3bb6a888e842032927be7ecf900fe198e3072f31d383c04844a6c94ec06853ed",
+    "c9e592e9ef9f0545b57002d25b147cecd467e718c56bdd2e038357a36cd04762",
+    "66edc0abb71823627e211818a000d86c6f46edf93e10cd0a1875886e74b9429c",
+    "9808a896d6ac965b4028d925e2db3094908adbfe9b973604241e291f999428ff",
+    "660040d98a1ef50935920ad10e76e3821dd1b17d7145d18f2f958c9ba7393812",
+    "0d0a8c3618d2b42177a4052e0c6079c68ff0e01b6ad89e4c567e1e9fa5ec4f57",
+    "31f9426e54ef7fc526a7a2e220683d792c07d136245a9f7aaa70ad3fdd4fff26",
+    "ce276cbdad4a7d0ec8e08f1d790defd32a44cceeecde3cd34bbfb39902a7ac98",
+    "fd9327224fd2042b28b9a2485f7bae32fe4a4ad4e9cfd46667a7af6e5265772e",
+    "8de24c3d6c5bd001d5fe24c5b2904f5ae11ab380b7e3a68053578ee732cd1923",
+    "7ac3c461b414d2cbae9fc7a6f47977bcb2515c00b3d9a9bb10d59a2ff1fb4885",
+    "fca257b49ce01296d462f31500d51f517b84a74e34bc6627af00edd503dff3f7",
+    "0ed3950140c0e2e16b224a906267aeb8a9bd853a22075fd31e3a8e0a5f92fbd8",
+    "d655255a3485bfdaa0cb51c5912a4169d1e3e1b4142cb18ab6a2c95682f5b982",
+    "dd55d978e22275b613a81317c63940ee3e7d8622e78e74f00606e3f686145aed",
+    "4c236f2e8c90ba59609519749f03b050f4174d1c14ddded8318507ae136498c4",
+    "098264b1a646ea86a3e9fcf733db0ee37c2b8d2d473179e8f0d827c304f996b6",
+    "cdd33a7b40b6b2079a008c0ed68e692948c4df6e33c13331647b5a935a546d7e",
+    "02f9272f8171d79f190c2bb86574781c201fe6f6fc97170092d9c17e20e9dae7",
+    "12da64304002cff682427bc464a7c20c8838e5034bc1e7734d0cfafac7eaf039",
+    "bac73e2fda05e690f170d93a4cfd8160cf47f8ac316487a119411908994817b3"
+  ],
+  "cameraSamples": [
+    {
+      "tick": 126,
+      "camera": {
+        "eye": [
+          9.778010471204187,
+          5.831937172774869,
+          22.152879581151833
+        ],
+        "target": [
+          -48.638743455497384,
+          0,
+          -67.47225130890052
+        ],
+        "fov": 54
+      }
+    },
+    {
+      "tick": 246,
+      "camera": {
+        "eye": [
+          5.757068062827226,
+          5.95759162303665,
+          20.39371727748691
+        ],
+        "target": [
+          -51.15183246073298,
+          0,
+          -66.9696335078534
+        ],
+        "fov": 54
+      }
+    },
+    {
+      "tick": 360,
+      "camera": {
+        "eye": [
+          1.9371727748691097,
+          6.0769633507853404,
+          18.722513089005236
+        ],
+        "target": [
+          -53.539267015706805,
+          0,
+          -66.49214659685863
+        ],
+        "fov": 54
+      }
+    }
+  ],
+  "browserErrors": [],
+  "browserWarnings": [],
+  "gif": {
+    "width": 640,
+    "height": 360,
+    "frames": 40,
+    "durationSeconds": 4.0,
+    "bytes": 4033930,
+    "sha256": "fd6bd191c00ec00190a8e1d44e1152d06a681c418375223872cb709551277264",
+    "distinctDecodedFrames": 40
+  }
+}

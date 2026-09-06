@@ -1,0 +1,122 @@
+[
+  {
+    "name": "01-first-light",
+    "scene": "dawn",
+    "title": "First light, crossing swell",
+    "caption": "Independent swell and wind-sea energy \u2022 resolved multiscale slopes",
+    "eye": [
+      14,
+      5.7,
+      24
+    ],
+    "end": [
+      -2,
+      6.2,
+      17
+    ],
+    "target": [
+      -46,
+      0,
+      -68
+    ],
+    "targetEnd": [
+      -56,
+      0,
+      -66
+    ],
+    "fov": 54,
+    "seconds": 8
+  },
+  {
+    "name": "02-crossing-seas",
+    "scene": "blue",
+    "title": "Swell meets wind sea",
+    "caption": "Three wave systems \u2022 256\u00b2 \u00d7 3 GPU FFT \u2022 finite-depth dispersion",
+    "eye": [
+      -20,
+      5.6,
+      15
+    ],
+    "end": [
+      -7,
+      5.9,
+      11
+    ],
+    "target": [
+      45,
+      0,
+      -50
+    ],
+    "targetEnd": [
+      51,
+      0,
+      -55
+    ],
+    "fov": 54,
+    "seconds": 8
+  },
+  {
+    "name": "03-whitewater",
+    "scene": "whitewater",
+    "title": "Whitewater, from above",
+    "caption": "Crest aeration \u2022 porous rafts \u2022 wind-stretched, aging foam",
+    "eye": [
+      25,
+      22,
+      35
+    ],
+    "end": [
+      8,
+      19,
+      32
+    ],
+    "target": [
+      4,
+      0,
+      0
+    ],
+    "targetEnd": [
+      -8,
+      0,
+      -8
+    ],
+    "fov": 48,
+    "seconds": 8
+  },
+  {
+    "name": "04-gale",
+    "scene": "storm",
+    "title": "Gale / crest-level tracking",
+    "caption": "Larger gravity waves \u2022 velocity-inheriting spray \u2022 persistent foam",
+    "eye": [
+      -10,
+      9.5,
+      22
+    ],
+    "end": [
+      -25,
+      10.5,
+      10
+    ],
+    "target": [
+      70,
+      0,
+      -42
+    ],
+    "targetEnd": [
+      60,
+      0,
+      -60
+    ],
+    "fov": 56,
+    "seconds": 8
+  },
+  {
+    "name": "05-zoom",
+    "scene": "whitewater",
+    "title": "Beyond the old zoom limit",
+    "caption": "Actual orbit dolly \u2022 adaptive clip planes \u2022 continuous ocean coverage",
+    "zoom": true,
+    "seconds": 10
+  }
+]
