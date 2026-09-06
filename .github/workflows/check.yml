@@ -1,0 +1,51 @@
+name: Build and verify AQUA
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install numerical and media-check dependencies
+        run: python -m pip install numpy==2.3.5 -r requirements-preview.txt
+      - name: Build from editable source
+        run: |
+          python tools/build.py
+          git diff --exit-code -- public/index.html public/engine-bundle.js
+      - name: Regenerate independent wave audit and run regression suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tools/spectrum_audit.cjs
+          python tools/wave_audit.py
+          node tools/tests.cjs | tee /tmp/aqua-tests.tap
+      - name: Verify README links and animated GIFs
+        run: python tools/check_repo.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aqua-validation
+          path: |
+            /tmp/aqua-tests.tap
+            docs/wave-audit.json
+            docs/sea-systems.json
+            docs/media/manifest.json
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aqua-standalone
+          path: public/standalone.html
+          retention-days: 14

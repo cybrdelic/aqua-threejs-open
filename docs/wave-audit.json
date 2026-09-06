@@ -1,0 +1,212 @@
+{
+  "dawn": [
+    {
+      "time": 57,
+      "heightMin": -3.0845144589774374,
+      "heightMax": 3.1421405718660864,
+      "sampledHs": 3.6728543769721362,
+      "minJacobian": 0.35593762700091347,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.3950508202296353,
+      "compressionPercent": 0.7925
+    },
+    {
+      "time": 61,
+      "heightMin": -3.8599777928619114,
+      "heightMax": 3.0737260552489833,
+      "sampledHs": 3.6738481668265806,
+      "minJacobian": 0.3728158512742517,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.41120096979895004,
+      "compressionPercent": 0.82625
+    },
+    {
+      "time": 66,
+      "heightMin": -3.097583901486108,
+      "heightMax": 3.034162362328472,
+      "sampledHs": 3.676402672643329,
+      "minJacobian": 0.4161661157789959,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.4741807219808829,
+      "compressionPercent": 0.78125
+    },
+    {
+      "time": 73,
+      "heightMin": -2.9896137138791574,
+      "heightMax": 3.1267875522243633,
+      "sampledHs": 3.6741387154934464,
+      "minJacobian": 0.42416114951039025,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.46303128589041154,
+      "compressionPercent": 0.8075000000000001
+    }
+  ],
+  "blue": [
+    {
+      "time": 57,
+      "heightMin": -4.202045057000879,
+      "heightMax": 4.417377188884973,
+      "sampledHs": 4.76326972458186,
+      "minJacobian": 0.18182419397374328,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.2079045193879624,
+      "compressionPercent": 3.8387499999999997
+    },
+    {
+      "time": 61,
+      "heightMin": -5.088255463660417,
+      "heightMax": 3.8173444217708643,
+      "sampledHs": 4.767425045091109,
+      "minJacobian": 0.20985900140438002,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.23554962719111688,
+      "compressionPercent": 3.84125
+    },
+    {
+      "time": 66,
+      "heightMin": -4.303699471834938,
+      "heightMax": 4.016742168066707,
+      "sampledHs": 4.772027910995547,
+      "minJacobian": 0.26726407804421676,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.31599585355371607,
+      "compressionPercent": 3.7312499999999997
+    },
+    {
+      "time": 73,
+      "heightMin": -3.9110510734585366,
+      "heightMax": 3.9342554486095045,
+      "sampledHs": 4.766124285634192,
+      "minJacobian": 0.27189921361147273,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.29795059576981475,
+      "compressionPercent": 3.83125
+    }
+  ],
+  "storm": [
+    {
+      "time": 57,
+      "heightMin": -6.933916272220728,
+      "heightMax": 6.305315351906825,
+      "sampledHs": 8.133705454890764,
+      "minJacobian": 0.18488107920462182,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.23137083784074364,
+      "compressionPercent": 6.70375
+    },
+    {
+      "time": 61,
+      "heightMin": -7.385929597223847,
+      "heightMax": 6.536406942352663,
+      "sampledHs": 8.1446831092849,
+      "minJacobian": 0.17479579105109233,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.19855703148502396,
+      "compressionPercent": 6.7525
+    },
+    {
+      "time": 66,
+      "heightMin": -6.7170504380850895,
+      "heightMax": 7.33499278304684,
+      "sampledHs": 8.169034740811549,
+      "minJacobian": 0.25557439175276847,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.29451447175798096,
+      "compressionPercent": 6.575
+    },
+    {
+      "time": 73,
+      "heightMin": -7.519007191318458,
+      "heightMax": 6.919486502371474,
+      "sampledHs": 8.164538571748006,
+      "minJacobian": 0.2689410407713792,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.28752441179425825,
+      "compressionPercent": 6.736250000000001
+    }
+  ],
+  "swell": [
+    {
+      "time": 57,
+      "heightMin": -5.172257804499778,
+      "heightMax": 5.024116781916091,
+      "sampledHs": 6.275336384372524,
+      "minJacobian": 0.48638095913087165,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.5235681585106523,
+      "compressionPercent": 0.042499999999999996
+    },
+    {
+      "time": 61,
+      "heightMin": -5.086395460976721,
+      "heightMax": 4.774961331826151,
+      "sampledHs": 6.277826647543487,
+      "minJacobian": 0.47943275156773446,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.5088379800336832,
+      "compressionPercent": 0.028749999999999998
+    },
+    {
+      "time": 66,
+      "heightMin": -4.634194355368537,
+      "heightMax": 5.350349470506904,
+      "sampledHs": 6.292286170997988,
+      "minJacobian": 0.5277813211590185,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.5917751930428289,
+      "compressionPercent": 0.02625
+    },
+    {
+      "time": 73,
+      "heightMin": -5.003031584780043,
+      "heightMax": 4.379209006834946,
+      "sampledHs": 6.296627764092625,
+      "minJacobian": 0.5219810478421414,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.5414788334767086,
+      "compressionPercent": 0.02375
+    }
+  ],
+  "whitewater": [
+    {
+      "time": 57,
+      "heightMin": -5.079408372211554,
+      "heightMax": 5.763370783318396,
+      "sampledHs": 5.846739143951389,
+      "minJacobian": 0.10353979656427961,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.12324524136965026,
+      "compressionPercent": 11.608749999999999
+    },
+    {
+      "time": 61,
+      "heightMin": -6.122261898451657,
+      "heightMax": 4.788388388183512,
+      "sampledHs": 5.839411823873996,
+      "minJacobian": 0.1209138408054732,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.15132409485736137,
+      "compressionPercent": 11.54375
+    },
+    {
+      "time": 66,
+      "heightMin": -5.167567662733001,
+      "heightMax": 5.354035109906515,
+      "sampledHs": 5.836471191467837,
+      "minJacobian": 0.17087863103499767,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.2281567423642975,
+      "compressionPercent": 11.4875
+    },
+    {
+      "time": 73,
+      "heightMin": -5.602373926359411,
+      "heightMax": 5.080327699008489,
+      "sampledHs": 5.8389587110223,
+      "minJacobian": 0.20941203650002346,
+      "foldFraction": 0.0,
+      "minEigenvalue": 0.22254396637508522,
+      "compressionPercent": 11.76625
+    }
+  ]
+}

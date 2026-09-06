@@ -1,0 +1,602 @@
+{
+  "dawn": {
+    "preset": {
+      "hs": 3.7,
+      "period": 9.4,
+      "direction": -0.55,
+      "chop": 0.74,
+      "depth": 180,
+      "sky": "dawn",
+      "exposure": 1.05,
+      "sun": [
+        -0.7215476372512444,
+        0.03527423889821395,
+        -0.6914656428538574
+      ],
+      "sunColor": [
+        2.1,
+        1.1,
+        0.46
+      ],
+      "wind": 8,
+      "roughness": 0.055,
+      "absorption": [
+        0.19,
+        0.047,
+        0.021
+      ],
+      "scattering": [
+        0.009,
+        0.017,
+        0.021
+      ],
+      "waterLight": [
+        0.065,
+        0.34,
+        0.41
+      ],
+      "foamThreshold": 0.64,
+      "foamGain": 2.6,
+      "foamLifetime": 11,
+      "bed": [
+        180,
+        0,
+        0,
+        0
+      ],
+      "terrain": false,
+      "rain": 0,
+      "boat": false,
+      "buoys": false,
+      "underwater": false,
+      "caustics": false,
+      "name": "First light / ocean",
+      "description": "GPU FFT • exact spectral slopes • low-angle solar reflection",
+      "seaSystems": [
+        {
+          "period": 9.4,
+          "direction": -0.55,
+          "fraction": 0.7350000000000001,
+          "gamma": 4.2,
+          "spread": 22
+        },
+        {
+          "period": 12.878000000000002,
+          "direction": 0.2799999999999999,
+          "fraction": 0.2,
+          "gamma": 2.4,
+          "spread": 12
+        },
+        {
+          "period": 4.042,
+          "direction": -0.77,
+          "fraction": 0.065,
+          "gamma": 1.3,
+          "spread": 3
+        }
+      ]
+    },
+    "expectedVariance": 0.855625000000014,
+    "n": 256,
+    "band": [
+      {
+        "length": 768,
+        "variance": 0.828930569406339
+      },
+      {
+        "length": 96,
+        "variance": 0.026202521125233632
+      },
+      {
+        "length": 12,
+        "variance": 0.0004919094684413415
+      }
+    ],
+    "systems": [
+      {
+        "period": 9.4,
+        "direction": -0.55,
+        "fraction": 0.7350000000000001,
+        "gamma": 4.2,
+        "spread": 22,
+        "energyFraction": 0.7350000000000001
+      },
+      {
+        "period": 12.878000000000002,
+        "direction": 0.2799999999999999,
+        "fraction": 0.2,
+        "gamma": 2.4,
+        "spread": 12,
+        "energyFraction": 0.2
+      },
+      {
+        "period": 4.042,
+        "direction": -0.77,
+        "fraction": 0.065,
+        "gamma": 1.3,
+        "spread": 3,
+        "energyFraction": 0.065
+      }
+    ]
+  },
+  "blue": {
+    "preset": {
+      "hs": 4.8,
+      "period": 9.2,
+      "direction": -0.55,
+      "chop": 0.72,
+      "depth": 90,
+      "sky": "blue",
+      "exposure": 1.05,
+      "sun": [
+        -0.3059247094681465,
+        0.7419804117208311,
+        -0.5965527141497358
+      ],
+      "sunColor": [
+        2.3,
+        2.25,
+        2.12
+      ],
+      "wind": 12,
+      "roughness": 0.105,
+      "absorption": [
+        0.19,
+        0.047,
+        0.021
+      ],
+      "scattering": [
+        0.009,
+        0.017,
+        0.021
+      ],
+      "waterLight": [
+        0.09,
+        0.43,
+        0.48
+      ],
+      "foamThreshold": 0.65,
+      "foamGain": 3.2,
+      "foamLifetime": 12,
+      "bed": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "terrain": false,
+      "rain": 0,
+      "boat": false,
+      "buoys": false,
+      "underwater": false,
+      "caustics": false,
+      "name": "Atlantic / crossing seas",
+      "description": "Energy-balanced swell + crossing sea + short wind waves / persistent whitewater",
+      "seaSystems": [
+        {
+          "period": 9.2,
+          "direction": -0.55,
+          "fraction": 0.7350000000000001,
+          "gamma": 4.2,
+          "spread": 22
+        },
+        {
+          "period": 12.604,
+          "direction": 0.2799999999999999,
+          "fraction": 0.2,
+          "gamma": 2.4,
+          "spread": 12
+        },
+        {
+          "period": 3.9559999999999995,
+          "direction": -0.77,
+          "fraction": 0.065,
+          "gamma": 1.3,
+          "spread": 3
+        }
+      ]
+    },
+    "expectedVariance": 1.4400000000000237,
+    "n": 256,
+    "band": [
+      {
+        "length": 768,
+        "variance": 1.3917953187466259
+      },
+      {
+        "length": 96,
+        "variance": 0.04730308278796116
+      },
+      {
+        "length": 12,
+        "variance": 0.0009015984654366455
+      }
+    ],
+    "systems": [
+      {
+        "period": 9.2,
+        "direction": -0.55,
+        "fraction": 0.7350000000000001,
+        "gamma": 4.2,
+        "spread": 22,
+        "energyFraction": 0.7350000000000001
+      },
+      {
+        "period": 12.604,
+        "direction": 0.2799999999999999,
+        "fraction": 0.2,
+        "gamma": 2.4,
+        "spread": 12,
+        "energyFraction": 0.2
+      },
+      {
+        "period": 3.9559999999999995,
+        "direction": -0.77,
+        "fraction": 0.065,
+        "gamma": 1.3,
+        "spread": 3,
+        "energyFraction": 0.065
+      }
+    ]
+  },
+  "storm": {
+    "preset": {
+      "hs": 8.2,
+      "period": 10.8,
+      "direction": -0.55,
+      "chop": 0.52,
+      "depth": 300,
+      "sky": "storm",
+      "exposure": 1.08,
+      "sun": [
+        -0.6,
+        0.2,
+        -0.77
+      ],
+      "sunColor": [
+        0.7,
+        0.78,
+        0.85
+      ],
+      "wind": 23,
+      "roughness": 0.13,
+      "absorption": [
+        0.19,
+        0.047,
+        0.021
+      ],
+      "scattering": [
+        0.009,
+        0.017,
+        0.021
+      ],
+      "waterLight": [
+        0.09,
+        0.36,
+        0.4
+      ],
+      "foamThreshold": 0.69,
+      "foamGain": 4.7,
+      "foamLifetime": 16,
+      "bed": [
+        300,
+        0,
+        0,
+        0
+      ],
+      "terrain": false,
+      "rain": 0,
+      "boat": false,
+      "buoys": false,
+      "underwater": false,
+      "caustics": false,
+      "name": "Gale / breaking crests",
+      "description": "Steeper multiscale crests / wind-driven spray / aged foam trails",
+      "seaSystems": [
+        {
+          "period": 10.8,
+          "direction": -0.55,
+          "fraction": 0.6799999999999999,
+          "gamma": 4.2,
+          "spread": 22
+        },
+        {
+          "period": 14.796000000000003,
+          "direction": 0.2799999999999999,
+          "fraction": 0.2,
+          "gamma": 2.4,
+          "spread": 12
+        },
+        {
+          "period": 4.644,
+          "direction": -0.77,
+          "fraction": 0.12,
+          "gamma": 1.3,
+          "spread": 3
+        }
+      ]
+    },
+    "expectedVariance": 4.202500000000046,
+    "n": 256,
+    "band": [
+      {
+        "length": 768,
+        "variance": 4.0700213753372685
+      },
+      {
+        "length": 96,
+        "variance": 0.13018238707813443
+      },
+      {
+        "length": 12,
+        "variance": 0.0022962375846433286
+      }
+    ],
+    "systems": [
+      {
+        "period": 10.8,
+        "direction": -0.55,
+        "fraction": 0.6799999999999999,
+        "gamma": 4.2,
+        "spread": 22,
+        "energyFraction": 0.68
+      },
+      {
+        "period": 14.796000000000003,
+        "direction": 0.2799999999999999,
+        "fraction": 0.2,
+        "gamma": 2.4,
+        "spread": 12,
+        "energyFraction": 0.20000000000000004
+      },
+      {
+        "period": 4.644,
+        "direction": -0.77,
+        "fraction": 0.12,
+        "gamma": 1.3,
+        "spread": 3,
+        "energyFraction": 0.12000000000000001
+      }
+    ]
+  },
+  "swell": {
+    "preset": {
+      "hs": 6.3,
+      "period": 13.2,
+      "direction": -0.55,
+      "chop": 0.8,
+      "depth": 180,
+      "sky": "dawn",
+      "exposure": 1.05,
+      "sun": [
+        -0.7215476372512444,
+        0.03527423889821395,
+        -0.6914656428538574
+      ],
+      "sunColor": [
+        2.1,
+        1.1,
+        0.46
+      ],
+      "wind": 10,
+      "roughness": 0.053,
+      "absorption": [
+        0.19,
+        0.047,
+        0.021
+      ],
+      "scattering": [
+        0.009,
+        0.017,
+        0.021
+      ],
+      "waterLight": [
+        0.065,
+        0.34,
+        0.41
+      ],
+      "foamThreshold": 0.61,
+      "foamGain": 2.8,
+      "foamLifetime": 11,
+      "bed": [
+        180,
+        0,
+        0,
+        0
+      ],
+      "terrain": false,
+      "rain": 0,
+      "boat": false,
+      "buoys": false,
+      "underwater": false,
+      "caustics": false,
+      "name": "Ocean swell / long-period energy",
+      "description": "Gravity-wave dispersion • large-scale surface displacement",
+      "seaSystems": [
+        {
+          "period": 13.2,
+          "direction": -0.55,
+          "fraction": 0.855,
+          "gamma": 4.2,
+          "spread": 22
+        },
+        {
+          "period": 18.084,
+          "direction": 0.2799999999999999,
+          "fraction": 0.12,
+          "gamma": 2.4,
+          "spread": 12
+        },
+        {
+          "period": 5.675999999999999,
+          "direction": -0.77,
+          "fraction": 0.025,
+          "gamma": 1.3,
+          "spread": 3
+        }
+      ]
+    },
+    "expectedVariance": 2.4806250000000234,
+    "n": 256,
+    "band": [
+      {
+        "length": 768,
+        "variance": 2.4680814785835574
+      },
+      {
+        "length": 96,
+        "variance": 0.012343693462222092
+      },
+      {
+        "length": 12,
+        "variance": 0.00019982795424351574
+      }
+    ],
+    "systems": [
+      {
+        "period": 13.2,
+        "direction": -0.55,
+        "fraction": 0.855,
+        "gamma": 4.2,
+        "spread": 22,
+        "energyFraction": 0.855
+      },
+      {
+        "period": 18.084,
+        "direction": 0.2799999999999999,
+        "fraction": 0.12,
+        "gamma": 2.4,
+        "spread": 12,
+        "energyFraction": 0.12
+      },
+      {
+        "period": 5.675999999999999,
+        "direction": -0.77,
+        "fraction": 0.025,
+        "gamma": 1.3,
+        "spread": 3,
+        "energyFraction": 0.025
+      }
+    ]
+  },
+  "whitewater": {
+    "preset": {
+      "hs": 5.9,
+      "period": 8.4,
+      "direction": -0.55,
+      "chop": 0.46,
+      "depth": 90,
+      "sky": "blue",
+      "exposure": 1.05,
+      "sun": [
+        -0.3059247094681465,
+        0.7419804117208311,
+        -0.5965527141497358
+      ],
+      "sunColor": [
+        2.3,
+        2.25,
+        2.12
+      ],
+      "wind": 17,
+      "roughness": 0.11,
+      "absorption": [
+        0.19,
+        0.047,
+        0.021
+      ],
+      "scattering": [
+        0.009,
+        0.017,
+        0.021
+      ],
+      "waterLight": [
+        0.09,
+        0.43,
+        0.48
+      ],
+      "foamThreshold": 0.72,
+      "foamGain": 4.6,
+      "foamLifetime": 17,
+      "bed": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "terrain": false,
+      "rain": 0,
+      "boat": false,
+      "buoys": false,
+      "underwater": false,
+      "caustics": false,
+      "name": "Whitewater / surface study",
+      "description": "Fresh crest aeration → porous rafts → elongated residual foam",
+      "seaSystems": [
+        {
+          "period": 8.4,
+          "direction": -0.55,
+          "fraction": 0.74,
+          "gamma": 4.2,
+          "spread": 22
+        },
+        {
+          "period": 11.508000000000001,
+          "direction": 0.2799999999999999,
+          "fraction": 0.14,
+          "gamma": 2.4,
+          "spread": 12
+        },
+        {
+          "period": 3.612,
+          "direction": -0.77,
+          "fraction": 0.12,
+          "gamma": 1.3,
+          "spread": 3
+        }
+      ]
+    },
+    "expectedVariance": 2.1756250000000286,
+    "n": 256,
+    "band": [
+      {
+        "length": 768,
+        "variance": 2.0182050497115376
+      },
+      {
+        "length": 96,
+        "variance": 0.15416007644892035
+      },
+      {
+        "length": 12,
+        "variance": 0.003259873839570677
+      }
+    ],
+    "systems": [
+      {
+        "period": 8.4,
+        "direction": -0.55,
+        "fraction": 0.74,
+        "gamma": 4.2,
+        "spread": 22,
+        "energyFraction": 0.74
+      },
+      {
+        "period": 11.508000000000001,
+        "direction": 0.2799999999999999,
+        "fraction": 0.14,
+        "gamma": 2.4,
+        "spread": 12,
+        "energyFraction": 0.14
+      },
+      {
+        "period": 3.612,
+        "direction": -0.77,
+        "fraction": 0.12,
+        "gamma": 1.3,
+        "spread": 3,
+        "energyFraction": 0.12
+      }
+    ]
+  }
+}

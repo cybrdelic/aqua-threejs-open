@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+docs/*.f32
+capture/output/*.mp4
+capture/output/*.jpg
+capture/preview-work/
+delivery/
+public/standalone.html
