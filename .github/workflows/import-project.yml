@@ -1,0 +1,156 @@
+name: Import CYBR WATER 2.4 and render README GIFs
+on:
+  push:
+    branches: ['import/cybr-water-2.4']
+    paths: ['.import/manifest.json']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Reconstruct exact source and verify asset hashes
+        run: |
+          python .import/restore.py
+          python tools/build.py
+          python .import/restore.py --verify-only
+      - name: Run fresh numerical checks while retaining historical records
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install numpy==2.3.5
+          mkdir -p /tmp/original-audits docs/import-checks
+          cp docs/wave-audit.json docs/sea-systems.json /tmp/original-audits/
+          node tools/spectrum_audit.cjs
+          python tools/wave_audit.py > docs/import-checks/wave-audit.log
+          node tools/tests.cjs | tee docs/import-checks/tests.tap
+          cp docs/wave-audit.json docs/sea-systems.json docs/import-checks/
+          cp /tmp/original-audits/* docs/
+          rm -f docs/*.f32
+          python .import/restore.py --verify-only
+          tar -czf /tmp/aqua-runtime.tar.gz source public tools capture docs licenses LICENSE README.md ATTRIBUTION.md LIMITATIONS.md THREE-LICENSE.txt requirements.txt requirements-preview.txt .gitignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aqua-import-runtime
+          path: /tmp/aqua-runtime.tar.gz
+          retention-days: 7
+  previews:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shot: [dawn-swells, whitewater, heavy-seas, free-zoom]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: aqua-import-runtime
+          path: /tmp/runtime
+      - name: Prepare original app and browser capture environment
+        run: |
+          mkdir -p /tmp/aqua
+          tar -xzf /tmp/runtime/aqua-runtime.tar.gz -C /tmp/aqua
+          python -m pip install playwright==1.57.0 Pillow==11.3.0
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg xvfb libgl1-mesa-dri mesa-vulkan-drivers
+          if ! command -v google-chrome && ! command -v chromium; then python -m playwright install --with-deps chromium; fi
+      - name: Record actual Three.js frames and encode animated GIF
+        working-directory: /tmp/aqua
+        env:
+          LP_NUM_THREADS: '3'
+        shell: bash
+        run: |
+          set -euo pipefail
+          xvfb-run -a -s '-screen 0 1280x720x24' python tools/readme_gifs.py --shot ${{ matrix.shot }} 2>&1 | tee /tmp/preview.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aqua-preview-${{ matrix.shot }}
+          path: |
+            /tmp/aqua/docs/media
+            /tmp/preview.log
+          retention-days: 7
+  publish:
+    needs: [build, previews]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: import/cybr-water-2.4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: aqua-import-runtime
+          path: /tmp/runtime
+      - name: Restore validated source into import branch
+        run: tar -xzf /tmp/runtime/aqua-runtime.tar.gz
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: aqua-preview-*
+          merge-multiple: false
+          path: /tmp/previews
+      - name: Collect and validate every animated preview
+        run: |
+          python -m pip install Pillow==11.3.0
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          target=Path('docs/media');target.mkdir(parents=True,exist_ok=True)
+          for name in ['dawn-swells','whitewater','heavy-seas','free-zoom']:
+              root=Path('/tmp/previews/aqua-preview-'+name)
+              for extension in ['gif','jpg','json']:
+                  matches=list(root.rglob(name+'.'+extension));assert len(matches)==1,(name,extension,matches)
+                  shutil.copyfile(matches[0],target/(name+'.'+extension))
+          PY
+          python tools/check_repo.py
+          python .import/restore.py --verify-only
+      - name: Commit source and GIFs, with no large intermediate video files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp .import/restore.py /tmp/import-verifier.py
+          rm -rf .import
+          git config user.name 'AQUA build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source public tools capture docs licenses README.md ATTRIBUTION.md LIMITATIONS.md THREE-LICENSE.txt requirements.txt requirements-preview.txt .gitignore
+          git add -u .import
+          test "$(git hash-object LICENSE)" = d159169d1050894d3ea3b98e1c965c4058208fe1
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          names=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          for name in names:
+              if name and Path(name).is_file():
+                  assert Path(name).stat().st_size<99*1024**2,name
+                  assert not name.endswith('.mp4'), 'Do not commit intermediate movies'
+          PY
+          git commit -m 'Import CYBR WATER 2.4 with complete source, local assets, regression tests and four animated README previews'
+          git push origin HEAD:import/cybr-water-2.4
+          git rev-parse HEAD > /tmp/IMPORT-COMMIT.txt
+          python tools/check_repo.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aqua-import-review
+          path: |
+            docs/media
+            docs/import-checks
+            docs/import-manifest.json
+            README.md
+            /tmp/IMPORT-COMMIT.txt
+          retention-days: 7
