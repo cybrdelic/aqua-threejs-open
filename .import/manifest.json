@@ -1,0 +1,21 @@
+{
+  "encoding": "base64-xz-json-with-byte-copy-deltas",
+  "baseArchiveURL": "https://raw.githubusercontent.com/cybrdelic/cybrdelic.github.io/39c25d8adfda0e51564c07a0cb7e9c1ab40d5012/water/v2/SOURCE.zip",
+  "baseArchiveSHA256": "3b4f10c0a0eea737ed3dd74ac7cd2b4d956072abbfd2dcdb1f14f7e3b2299a18",
+  "payloadSHA256": "507bb109299962ba7414de5e8a08c020759cfa460b347d5ebfc3ab00e5abb9fc",
+  "files": 63,
+  "parts": [
+    {"path":".import/part0.txt","sha256":"8f1d48699d97cb41a66bb341e65f1dc5501cfcd3a6c9264632004c795e242362","length":12000},
+    {"path":".import/part1.txt","sha256":"630d85c2c1898304fcf992ed235cf22d7ba652267e78c6f8e12041890fd80005","length":12000},
+    {"path":".import/part2.txt","sha256":"23cc249a9794a9d8b24b9fc6f7ccbc8ad6f36bcd08060f00f63b4ddcfd27362c","length":12000},
+    {"path":".import/part3.txt","sha256":"6c8514afec1783ffc26a4c2d566c789a57dc73a3478c46a48215a3adff7ec2a0","length":12000},
+    {"path":".import/part4.txt","sha256":"d9569725010482294230df77c546fc6a83ef5d0d789d237808579516c4826724","length":12000},
+    {"path":".import/part5.txt","sha256":"1eb7eef29d8ba8047a569ce244e13065f6fd051cf6e23c2c60c2d9ef9b5bad7d","length":12000},
+    {"path":".import/part6.txt","sha256":"24b95542aefda64849ca51d31aaf527b63d071a86a146e81e2322607dedab48d","length":12000},
+    {"path":".import/part7.txt","sha256":"42c97e4aa956789de33fe4fc50a3ad4a75b33e628fec5c1423943852a57dfbf6","length":12000},
+    {"path":".import/part8.txt","sha256":"ec13456fea4de9cf658788d6a6d49227fccdd69f17d48e58fd0298aa4e300fa6","length":12000},
+    {"path":".import/part9.txt","sha256":"9e7c137f74e6cc9dad4f6d894fa731b6c02af7878a89147e7d5e1dd555ebf1b4","length":12000},
+    {"path":".import/part10.txt","sha256":"0b8a72d5eab0e7aebb259cf867e0f978b8b8d37edb6aa8e60b4b9950d30cf963","length":12000},
+    {"path":".import/part11.txt","sha256":"6bf8d0754c03f4198394f9c98b3689e7d948daf553ca27242cc1b39697f55134","length":8584}
+  ]
+}
