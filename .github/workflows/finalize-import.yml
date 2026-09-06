@@ -1,0 +1,85 @@
+name: Finalize AQUA source and README GIFs
+on:
+  push:
+    branches: ['import/cybr-water-2.4']
+    paths: ['.github/workflows/finalize-import.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: import/cybr-water-2.4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: aqua-import-runtime
+          run-id: 34058111771
+          github-token: ${{ github.token }}
+          path: /tmp/runtime
+      - name: Restore exact validated source and corrected packaging check
+        run: |
+          tar -xzf /tmp/runtime/aqua-runtime.tar.gz
+          cp .import/check_repo.py tools/check_repo.py
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: aqua-preview-*
+          run-id: 34058111771
+          github-token: ${{ github.token }}
+          merge-multiple: false
+          path: /tmp/previews
+      - name: Collect every original animated preview and verify complete package
+        run: |
+          python -m pip install Pillow==11.3.0
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          target=Path('docs/media');target.mkdir(parents=True,exist_ok=True)
+          for name in ['dawn-swells','whitewater','heavy-seas','free-zoom']:
+              root=Path('/tmp/previews/aqua-preview-'+name)
+              for extension in ['gif','jpg','json']:
+                  matches=list(root.rglob(name+'.'+extension));assert len(matches)==1,(name,extension,matches)
+                  shutil.copyfile(matches[0],target/(name+'.'+extension))
+          PY
+          python tools/check_repo.py
+          python .import/restore.py --verify-only
+      - name: Commit source and GIFs on the isolated import branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .import
+          git config user.name 'AQUA build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add source public tools capture docs licenses README.md ATTRIBUTION.md LIMITATIONS.md THREE-LICENSE.txt requirements.txt requirements-preview.txt .gitignore
+          git add -u .import
+          test "$(git hash-object LICENSE)" = d159169d1050894d3ea3b98e1c965c4058208fe1
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+          names=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          for name in names:
+              if name and Path(name).is_file():
+                  assert Path(name).stat().st_size<99*1024**2,name
+                  assert not name.endswith('.mp4'), 'Do not commit intermediate movies'
+          PY
+          git commit -m 'Import CYBR WATER 2.4 with complete source, local assets, regression tests and four animated README previews'
+          git push origin HEAD:import/cybr-water-2.4
+          git rev-parse HEAD > IMPORT-COMMIT.txt
+          python tools/check_repo.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aqua-import-review
+          path: |
+            docs/media
+            docs/import-checks
+            docs/import-manifest.json
+            README.md
+            IMPORT-COMMIT.txt
+          retention-days: 7
